@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test name="test1">
+        <classes>
+            <class name="Day2.jenkinsProject">
+                <methods>
+                    <include name="SearchTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test2">
+        <classes>
+            <class name="Day2.mavenJenkins">
+                <methods>
+                    <include name="verifySearchTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test><test verbose="2" preserve-order="true" name="test3">
+        <classes>
+            <class name="Day2.testngDemo">
+                <methods>
+                    <include name="testDemo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+
+</suite>
